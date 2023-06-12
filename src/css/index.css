@@ -1,3 +1,10 @@
+root {
+    --mainColor: ;
+    --secondColor: ;
+    --accentColor: #cab8ff;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,10 +32,6 @@
     padding: 0 50px;
 }
 
-.navbarLogo {
-
-}
-
 .navlogo {
     width: auto;
     height: 100%;
@@ -41,6 +44,7 @@
 }
 #navbarLogo {
     color: white;
+
     align-items: center;
     justify-content: center;
     display: flex;
@@ -49,10 +53,14 @@
     height: 100%;
     font-size: 2rem;
 }
+#navbarLogo:hover {
+    color: #cab8ff;
+}
 
 .navbarSocials {
-    margin-left: 20px;
     display: flex;
+    gap: 1rem;
+    margin-left: 20px;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -60,12 +68,20 @@
  }
 
 .SocialElem {
+    padding-top: 3px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
     background: white;
     border-radius: 5px;
 }
 
-.socialLogo {
+.SocialElem:hover{
+    background: #cab8ff;
+}
 
+.socialColor {
+    fill: Black;
 }
 
 .navbarMenu {
@@ -90,7 +106,7 @@
 }
 
 .navbarLinks:hover {
-    color: purple;
+    color: #cab8ff;
 }
 
 #navbarLogo {
