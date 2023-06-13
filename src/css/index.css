@@ -1,9 +1,15 @@
-root {
-    --mainColor: ;
-    --secondColor: ;
-    --accentColor: #cab8ff;
+@keyframes btnHvr {
+    from {
+        background-color: white;
+        color: #1c1c1c;
+        border: 3px solid #cab8ff;
+    }
+    to {
+        background-color: #cab8ff;
+        color: white;
+        border: 3px solid white;
+    }
 }
-
 
 * {
     box-sizing: border-box;
@@ -14,7 +20,7 @@ root {
 
 /* Nav */
 .navbar {
-    background: black;
+    background: #3b3b3b;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -121,8 +127,8 @@ root {
 }
 
 /* About */
-.about {
-    background-color: dimgray;
+#About {
+    background-color: #363636;
 }
 
 .aboutContainer {
@@ -132,11 +138,28 @@ root {
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: lightblue;
+    background-color: #363636;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+}
+
+.aboutText h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.aboutText h1 {
+    font-size: 4rem;
+    background-color: #cab8ff;
+    background-image: linear-gradient(to top, white 0%, #cab8ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.aboutText p {
+    color: white;
 }
 
 .aboutBtn {
@@ -149,32 +172,21 @@ root {
     position: relative;
     transition: all 0.35s;
     outline: none;
+    top: 0;
+    left: 0;
 }
+
+.aboutBtn:hover {
+    transform: translate(-5px, -5px);
+    opacity: 60%;
+}
+
 
 .aboutBtn a {
     position: relative;
     z-index: 2;
     color: white;
     text-decoration: none;
-}
-
-.aboutBtn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 0;
-    width: 100%;
-    background-color: purple;
-    transition: all 0.35s;
-    border-radius: 5px;
-}
-.aboutBtn:hover {
-    color: white;
-}
-
-.aboutBtn:hover:after {
-    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -187,26 +199,373 @@ root {
         margin: 0 auto;
         height: 90vh;
     }
+    .aboutText {
+        text-align: center;
+        margin-bottom: 4px;
+    }
+    .aboutText h2 {
+        text-align: center;
+        margin-bottom: 4px;
+    }
     .aboutText h1 {
         text-align: center;
         margin-bottom: 4rem;
     }
     .aboutText p {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
     }
     .aboutBtn{
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
     }
 }
 
 /* Devlog */
 
+#Devlog {
+    background-image: linear-gradient(to top, #1c1c1c 0%, #363636 100%);
+}
+
+.devlogContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-image: linear-gradient(to top, #1c1c1c 0%, #363636 100%);
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.devlogImgs {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.dragon {
+    position: relative;
+    top: -70px;
+    left: -180px;
+    height: 400px;
+    width: auto;
+    border-radius: 25px;
+}
+.sickle {
+     position: absolute;
+     top: 80px;
+     left: 20px;
+     height: 400px;
+     width: auto;
+     border-radius: 25px;
+}
+
+.devlogContent h1 {
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.devlogContent p {
+    color: white;
+}
+
+.devlogBtn {
+    background-color: #cab8ff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    top: 0;
+    left: 0;
+}
+
+.devlogBtn:hover {
+    transform: translate(-5px, -5px);
+    opacity: 60%;
+}
+
+
+.devlogBtn a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .devlogContainer {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+        padding-top: 200px;
+    }
+    .devlogImgs {
+        display: flex;
+    }
+    .dragon {
+        flex: 50;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 45vw;
+        border-radius: 25px;
+    }
+    .sickle {
+        flex: 50;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 45vw;
+        border-radius: 25px;
+    }
+}
+
 /* Projects */
+
+#Proj {
+    background-color: #1c1c1c;
+}
+
+.projContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #1c1c1c;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.projContent h1 {
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.projContent p {
+    color: white;
+}
+
+.projImgs {
+    position: relative;
+    top: 0;
+    left: 350px;
+}
+
+.code {
+    position: relative;
+    top: -70px;
+    left: -180px;
+    height: 400px;
+    width: auto;
+    border-radius: 25px;
+}
+.app {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    height: 400px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.projBtn {
+    background-color: #cab8ff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    top: 0;
+    left: 0;
+}
+
+.projBtn:hover {
+    transform: translate(-5px, -5px);
+    opacity: 60%;
+}
+
+
+.projBtn a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
 
 /* Resume */
 
+#Resume {
+    background-color: #1c1c1c;
+}
+
+.resumeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #1c1c1c;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.resumeSkills {
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    margin-right: 80px;
+    height: 700px;
+}
+
+.resumeSkills h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    color: #1c1c1c;
+    text-decoration: underline solid 4px #1c1c1c;
+}
+
+.skillList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.listElem {
+    display: inline-block;
+    color: #1c1c1c;
+    background-color: white;
+    padding: 5px 10px;
+    border: 3px solid #cab8ff;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.listElem:hover {
+    animation-name: btnHvr;
+    animation-duration: 0.5s;
+
+    background-color: #cab8ff;
+    color: white;
+    border: 3px solid white;
+}
+
+.resumeTop {
+    height: 50%;
+    margin: 20px 40px;
+    border-bottom: 2px solid #1c1c1c;
+}
+.resumeBottom {
+    margin: 20px 40px;
+    height: 50%;
+    display: flex;
+}
+
+.langRating {
+    flex: 20%;
+    border-right: 2px solid #1c1c1c;
+    margin-bottom: 60px;
+}
+
+.rating {
+    display: inline-block;
+    color: #1c1c1c;
+    background-color: white;
+    padding: 5px 10px;
+    border: 3px solid #cab8ff;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.rating:hover {
+    animation-name: btnHvr;
+    animation-duration: 0.5s;
+
+    background-color: #cab8ff;
+    color: white;
+    border: 3px solid white;
+}
+
+.stars {
+    flex: 80%;
+}
+
+.placement {
+    display: flex;
+    flex-direction: row;
+    color: #1c1c1c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 10px 20px 5px;
+}
+
+.checked {
+    color: #cab8ff;
+}
+
+.resumeContent h1 {
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.resumeContent p {
+    color: white;
+}
+
+.resumeBtn {
+    background-color: #cab8ff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    top: 0;
+    left: 0;
+}
+
+.resumeBtn:hover {
+    transform: translate(-5px, -5px);
+    opacity: 60%;
+}
+
+.resumeBtn a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
 /* Contact */
+
+
 
 /* Footer */
