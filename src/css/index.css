@@ -113,7 +113,93 @@ root {
     cursor: pointer;
 }
 
+#mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%,20%);
+}
+
 /* About */
+.about {
+    background-color: dimgray;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: lightblue;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.aboutBtn {
+    background-color: #cab8ff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.aboutBtn a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
+.aboutBtn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: purple;
+    transition: all 0.35s;
+    border-radius: 5px;
+}
+.aboutBtn:hover {
+    color: white;
+}
+
+.aboutBtn:hover:after {
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutContainer {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+    .aboutText h1 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .aboutText p {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .aboutBtn{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
 
 /* Devlog */
 
