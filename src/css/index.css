@@ -20,6 +20,7 @@
 
 /* Nav */
 .navbar {
+    width: 100vw;
     background: #3b3b3b;
     height: 100px;
     display: flex;
@@ -129,6 +130,7 @@
 /* About */
 #About {
     background-color: #363636;
+    width: 100vw;
 }
 
 .aboutContainer {
@@ -225,6 +227,7 @@
 
 #Devlog {
     background-image: linear-gradient(to top, #1c1c1c 0%, #363636 100%);
+    width: 100vw;
 }
 
 .devlogContainer {
@@ -338,6 +341,7 @@
 
 #Proj {
     background-color: #1c1c1c;
+    width: 100vw;
 }
 
 .projContainer {
@@ -417,6 +421,7 @@
 
 #Resume {
     background-color: #1c1c1c;
+    width: 100vw;
 }
 
 .resumeContainer {
@@ -567,6 +572,7 @@
 /* Contact */
 #Contact {
     background-color: #1c1c1c;
+    width: 100vw;
 }
 
 .contactContainer {
@@ -687,3 +693,103 @@ input[type=submit]:hover {
     border: 3px solid white;
 }
 /* Footer */
+.footer {
+    border-top: 4px solid white;
+    width: 100vw;
+    background: #3b3b3b;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.footerMore {
+    padding-right: 40px;
+    border-right: 2px solid white;
+}
+
+.footerMore h2{
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.footerMore a {
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+.footerMore a:hover {
+    color: #cab8ff;
+    text-decoration: none;
+}
+
+.footerContact h2{
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    margin-bottom: 8px;
+}
+
+.footerContact p{
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+.footerContact a{
+    text-align: center;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.footerSocialElem {
+    padding-top: 3px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.footerSocialElem:hover{
+    background: #cab8ff;
+}
+
+.linkBar {
+    justify-content: space-between;
+}
+
+.footerSocialContainer {
+    border-left: 2px solid white;
+    padding-left: 40px;
+}
+
+.footerSocialContainer h2 {
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 8px;
+}
