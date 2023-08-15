@@ -17,6 +17,10 @@ function updateContent(content) {
                 "            <h3>Devlog 3: Let there be assets!</h3>\n" +
                 "            <p>June 2, 2023</p>\n" +
                 "        </a></li>\n" +
+                "        <li class=\"articleItem\"><a onclick=\"updateContent('article4')\">\n" +
+                "            <h3>Devlog 4: The Engine Reignites!</h3>\n" +
+                "            <p>August 15, 2023</p>\n" +
+                "        </a></li>\n" +
                 "    </ul>";
             break;
         case "article1":
