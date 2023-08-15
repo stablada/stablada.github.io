@@ -49,7 +49,7 @@ function updateContent(content) {
         case "article3":
             mainPane.innerHTML = "<a class=\"backbtn\" onclick=\"updateContent('home')\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M20 9v6h-8v4.84L4.16 12L12 4.16V9h8Z\"/></svg></a>" +
                 "<h1>Article 3: Let there be assets!</h1>" +
-                "<p>April 9, 2023</p>" +
+                "<p>June 2, 2023</p>" +
                 "<h2>Hiya Yall!</h2>" +
                 "<p>So today, I'd like to update you all on the progress I've made! It's been a decent bit since my last posting, but this is an important one. I've taken some time to research more into game design AND game asset creation. Turns out it's not as easy as I've thought! I was (quite comedically) under the impression you can just kinda make things happen with ease but I now realize that's not really the case. These models have been rough and tough, but we've made them work! Here is my progress update for thus far...</p>" +
                 "<h2>Stats</h2>" +
@@ -61,6 +61,20 @@ function updateContent(content) {
                 "<div class=\"dragonImg\"><img src=\"/assets/lowPolyRelic.jpg\" alt=\"Low Poly Relic\"></div>" +
                 "<h2>Summary and Goals</h2>" +
                 "<p>In sum, I've worked alot on 3d modelling to be able to create my world one pixel at a time! As well, I'm implementing C# scripts day by day until eventually this bad boy will be ready to go! I can't wait to update you all more! Take care of yourselves and don't forget your worth in this world. Anybody can create something amazing. Let's keep building!</p>";
+            break;
+        case "article4":
+            mainPane.innerHTML = "<a class=\"backbtn\" onclick=\"updateContent('home')\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M20 9v6h-8v4.84L4.16 12L12 4.16V9h8Z\"/></svg></a>" +
+                "<h1>Article 4: The Engine Reignites!</h1>" +
+                "<p>August 15, 2023</p>" +
+                "<h2>Why Hello There!</h2>" +
+                "<p>So, I've actually been doing alot of work on  this project on the side! I have a friend actually joining me on this project in the character/systems design aspect, and I'm very excited to keep working on this project!</p>" +
+                "<h2>Characters</h2>" +
+                "<p>Characters are all controlled using a classic Point and Click mechanic (which in this case is the nifty usage of an AI Navmesh Component in unity) and have 4 abilities. These are by default bound to Q W E R and have LMB as base attack and RMB as move. This can be keybound to the player's liking. The defaults are designed to match the general convention of Q being damage, W being buffs/heals/status, E being utility, and R being ultimate. This is by no means set in stone as some characters may simply not have a buff of any sort or anything remotely near ulility. Nonetheless, the kits of these characters are designed to flow with eachother, with some abilities reseting or even empowering others, or causing status effects that make themselves more useful. This creates an environment that fuels the character's own playstyle. On the other hand, despite this synergy, most kits also have alternate ways of being played. For example, where a support healer can be focused on items that empower healing, they may also be able to build pure magic damage and become (albeit a good bit inefficient compared to other mages) a glass cannon that can play offense more than defense. Here is an example of a kit created that depicts a necromancer who is able to raise skeleton thralls (which are just NPC skeletons that attack the nearest enemy).</p>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/necroStats.png\" alt=\"Necromancer Stats and Abilities\"></div>" +
+                "<h2>Art</h2>" +
+                "<p>I've made some progress on the UI itself! My intent is to simply create different UI elements for every character. For example, the Necromancer has a bone/skeleton themed hud with purple accents and purple ability frames. I'm excited to show you more about these elements!</p>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/abilArt.PNG\" alt=\"Blender Sickle Asset\"></div>" +
+                "<p>Very excited to showcase more as I build more! I'll bring updates as they come! Check in soon for some possible early early alpha footage! Talk to you soon!</p>";
             break;
     }
 }
