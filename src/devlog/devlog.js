@@ -20,7 +20,11 @@ function updateContent(content) {
                 "        <li class=\"articleItem\"><a onclick=\"updateContent('article4')\">\n" +
                 "            <h3>Devlog 4: The Engine Reignites!</h3>\n" +
                 "            <p>August 15, 2023</p>\n" +
-                "        </a></li>\n" +
+                "        </a></li>\n" + 
+                "        <li class=\"articleItem\"><a onclick=\"updateContent('article5')\">\n" +
+                "            <h3>Devlog 5: System Reboot?</h3>\n" +
+                "            <p>October 4, 2023</p>\n" +
+                "        </a></li>\n" + 
                 "    </ul>";
             break;
         case "article1":
@@ -79,6 +83,20 @@ function updateContent(content) {
                 "<p>I've made some progress on the UI itself! My intent is to simply create different UI elements for every character. For example, the Necromancer has a bone/skeleton themed hud with purple accents and purple ability frames. I'm excited to show you more about these elements!</p>" +
                 "<div class=\"dragonImg\"><img src=\"/assets/abilArt.PNG\" alt=\"Blender Sickle Asset\"></div>" +
                 "<p>Very excited to showcase more as I build more! I'll bring updates as they come! Check in soon for some possible early early alpha footage! Talk to you soon!</p>";
+            break;
+        case "article5":
+            mainPane.innerHTML = "<a class=\"backbtn\" onclick=\"updateContent('home')\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M20 9v6h-8v4.84L4.16 12L12 4.16V9h8Z\"/></svg></a>" +
+                "<h1>Article 5: System Reboot?</h1>" +
+                "<p>October 4, 2023</p>" +
+                "<h2>Heya!</h2>" +
+                "<p>As you've likely heard, this is the point in time where Unity, the software I was using thus far, has taken a lovely turn to the dark side of monetization. Previously rendering their services to be tools useable by anybody in the community for free (or licensed), now the company's monetization has not only taken a per-install monetary format but also crushed the hopes and dreams of many indie game developers. Thus, in light of this unfortunate event, I've come to swap the basis of my still-theoretical game. Having made most of my progress be in the realm of text documents and art, I don't have much but 40 hours of effort and tutorial following to lose by making the swap. I know what you're wondering though... where is the swap going to be to? Maybe Unity with its beautiful graphics and well-optimized systems? Maybe Godot with its... whatever Godot has to offer..? Well... neither! I'm actually looking to program my own game engine (I know.. wish me luck)! I can make plenty of changes to my programs and really thoroughly manipulate not only data/memory allocation, but also optimize and create the game with my own methods. This also allows me to learn more about C++, as I am proficient in C#, but have always wanted to dive more in-depth into C++, knowing they have their differences despite both being C-based languages. C++ focuses mostly on the low-level data manipulation aspects of programming, whereas C# idealizes a more user-friendly high-level centered approach to application development. I'm excited to see how far I get!</p>" +
+                "<h2>Graphics</h2>" +
+                "<p>With my transfer to C++ (likely using OpenGL API), I'm more excited than anything else on the <strong>graphics</strong>. My goal is to get a top-down isometric camera view, with the most important part being the implementation of a certain post-processing effect known as <strong>pixelation</strong>! This should give the game the beautiful pixel art aesthetic I desire, which can be tweaked to perfection. Thus, I am learning to make 3d assets via blender with low poly counts (in order to render with most efficency as it's going to get crunched either way) and still-recognizable assets! We shall see how well I execute this as time goes on!</p>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/pixelBlend.png\" alt=\"Blender Render of the style I'd like to approach\"></div>" +
+                "<h2>Characters</h2>" +
+                "<p>Characters can make or break a series. That's why I'd like to polish the characters we'll spend all our time as! Our first discussion is on the central point of the game, the <strong>Hunters</strong>, a guild that encompasses the main roster of the cast. As time passes, more characters will be 'recruited', but the roster generally splits the cast into archetypes, ranging from <i>Mages</i> to <i>Tanks</i> and <i>Assasins</i>, each archetype having their own gimmicks. Whereas the mages may want to prioritize spacing and have generally low health but high damage to compensate, the tanks may want to be in the heat of battle, reveling in the mass pain and destruction they can incur with nothing but their menacing stance and proud stature. Most playstyles will find something they like at some point, with my intent being to implement and add new characters regularly for a good while! I'd really like this game to evolve as time goes by, with layers upon layers of replayability and hours of gameplay to ensue. I really want my game to be the beacon of light players want and am always happy to hear player feedback! First, though, I've got to get the game up and running, so wish me luck!</p>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/abilArt.PNG\" alt=\"Blender Sickle Asset\"></div>" +
+                "<p>I'm very excited to tackle this new adventure with you all! See you in a bit!</p>";
             break;
     }
 }
