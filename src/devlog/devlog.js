@@ -24,11 +24,11 @@ function updateContent(content) {
                 "        <li class=\"articleItem\"><a onclick=\"updateContent('article5')\">\n" +
                 "            <h3>Devlog 5: System Reboot?</h3>\n" +
                 "            <p>October 4, 2023</p>\n" +
-                "        </a></li>\n" +
+                "        </a></li>\n" + 
                 "        <li class=\"articleItem\"><a onclick=\"updateContent('article6')\">\n" +
                 "            <h3>Devlog 6: From the Camera's Lens</h3>\n" +
                 "            <p>October 11, 2023</p>\n" +
-                "        </a></li>\n" +
+                "        </a></li>\n" + 
                 "    </ul>";
             break;
         case "article1":
@@ -55,7 +55,6 @@ function updateContent(content) {
                 "<h2>Hi There!</h2>" +
                 "<p>Today's work was primarily focused on the player's movement. I focused on myself and learning the basics of Scripts with C#. It seems to (obviously) be one of the C languages, and to be quite frank, reminds me a good bit of Java. This obviously applies to a large variety of different coding languages, but all in all what it means for me is that I feel more comfortable with this than if Unity had its own whacky coding language. Let's go C#!</p>" +
                 "<p>Here is an image showcasing the on-click player movement idea I wanted to expand on. Essentially the mechanic this uses is drawing a line from the center of the cube to where the mouse was clicked, and uses physics to accelerate to that coordinate set on the plane. This is just the start, as I have a lot of mechanics to code in, ranging from an indicator of some sort to showcase where the block is going to move, as well as a system aiding in movement around objects, and not just phasing through them or getting stuck. This pathing system is dependent on the system I want to go for, but to be completely honest, as a quality of life decision I'm going to implement it. I dislike the idea of wanting to get around a set of crates and getting stuck on them because the player-model doesn't understand that the player wants to go around. Anyhow, today's work was mostly centered around learning for myself so that I don't have to constantly rely on tutorials like I used to. I feel that immersing myself in this is going to be the key to truly learning and making my dreams come true on this front; without that, I'm basically going to be combining lots of other people's code into a mess I only really call my own. My goal is to make it my own by writing my own code and learning from it.</p>" +
-                "<div class=\"dragonImg\"><img src=\"/assets/unityMovement.jpg\" alt=\"Unity Movement\"></div>" +
                 "<p>All in all, I have a lot of work to do and am looking forward to creating new updates for you (and myself). Thank you for reading this and I wish you the best of luck in your own projects! Have a great day!</p>";
             break;
         case "article3":
@@ -66,11 +65,9 @@ function updateContent(content) {
                 "<p>So today, I'd like to update you all on the progress I've made! It's been a decent bit since my last posting, but this is an important one. I've taken some time to research more into game design AND game asset creation. Turns out it's not as easy as I've thought! I was (quite comedically) under the impression you can just kinda make things happen with ease but I now realize that's not really the case. These models have been rough and tough, but we've made them work! Here is my progress update for thus far...</p>" +
                 "<h2>Stats</h2>" +
                 "<p>So I've implemented both the stats and levelup systems in their most basic forms. These are just two of the biggest mechanics of the game, and so I wanted to start with those. These scripts essentially take on the most basic actions the game does \"behind the scenes\"! I can't wait to make them useful now by making the rest of the game. At least I know these scripts are made in their most basic sense and ready to go!</p>" +
-                "<div class=\"dragonImg\"><img src=\"/assets/stats.jpg\" alt=\"Stats\"></div>" +
                 "<h2>Blender</h2>" +
                 "<p>One of the more interesting technologies I decided to give a shot was Blender. I have some basic experience with 3D software as my highschool years were at an engineering school, and I was taught to use SolidWorks for basic CADing solutions. Unfortunately for me, no amount of SolidWorks could have prepared me for this tough program. From sculpting to shader nodes to uv texture maps, I learned a lot about this program and was able to make several cool little projects before I really dove into the game design aspect! Here are two images of my progress. Both of these models started from a single cube, and were subdivision surfaced and extruded and sculpted into the beauties they are now. The low-poly style is what I'm going for, as it doesn't really matter how realistic or not my textures look. These textures are going to be pixelated for the final result, as my goal is to use a shader on my game that essentially bakes it into pixel art! Thus, smaller details are not really necessary, but efficiency and performance is.</p>" +
                 "<div class=\"dragonImg\"><img src=\"/assets/sickle3DRender.png\" alt=\"Blender Sickle Asset\"></div>" +
-                "<div class=\"dragonImg\"><img src=\"/assets/lowPolyRelic.jpg\" alt=\"Low Poly Relic\"></div>" +
                 "<h2>Summary and Goals</h2>" +
                 "<p>In sum, I've worked alot on 3d modelling to be able to create my world one pixel at a time! As well, I'm implementing C# scripts day by day until eventually this bad boy will be ready to go! I can't wait to update you all more! Take care of yourselves and don't forget your worth in this world. Anybody can create something amazing. Let's keep building!</p>";
             break;
@@ -99,7 +96,7 @@ function updateContent(content) {
                 "<div class=\"dragonImg\"><img src=\"/assets/pixelBlend.png\" alt=\"Blender Render of the style I'd like to approach\"></div>" +
                 "<h2>Characters</h2>" +
                 "<p>Characters can make or break a series. That's why I'd like to polish the characters we'll spend all our time as! Our first discussion is on the central point of the game, the <strong>Hunters</strong>, a guild that encompasses the main roster of the cast. As time passes, more characters will be 'recruited', but the roster generally splits the cast into archetypes, ranging from <i>Mages</i> to <i>Tanks</i> and <i>Assasins</i>, each archetype having their own gimmicks. Whereas the mages may want to prioritize spacing and have generally low health but high damage to compensate, the tanks may want to be in the heat of battle, reveling in the mass pain and destruction they can incur with nothing but their menacing stance and proud stature. Most playstyles will find something they like at some point, with my intent being to implement and add new characters regularly for a good while! I'd really like this game to evolve as time goes by, with layers upon layers of replayability and hours of gameplay to ensue. I really want my game to be the beacon of light players want and am always happy to hear player feedback! First, though, I've got to get the game up and running, so wish me luck!</p>" +
-                "<div class=\"dragonImg\"><img src=\"/assets/abilArt.PNG\" alt=\"Blender Sickle Asset\"></div>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/alchAbils.png\" alt=\"Blender Sickle Asset\"></div>" +
                 "<p>I'm very excited to tackle this new adventure with you all! See you in a bit!</p>";
             break;
         case "article6":
