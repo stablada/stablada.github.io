@@ -24,7 +24,11 @@ function updateContent(content) {
                 "        <li class=\"articleItem\"><a onclick=\"updateContent('article5')\">\n" +
                 "            <h3>Devlog 5: System Reboot?</h3>\n" +
                 "            <p>October 4, 2023</p>\n" +
-                "        </a></li>\n" + 
+                "        </a></li>\n" +
+                "        <li class=\"articleItem\"><a onclick=\"updateContent('article6')\">\n" +
+                "            <h3>Devlog 6: From the Camera's Lens</h3>\n" +
+                "            <p>October 11, 2023</p>\n" +
+                "        </a></li>\n" +
                 "    </ul>";
             break;
         case "article1":
@@ -97,6 +101,20 @@ function updateContent(content) {
                 "<p>Characters can make or break a series. That's why I'd like to polish the characters we'll spend all our time as! Our first discussion is on the central point of the game, the <strong>Hunters</strong>, a guild that encompasses the main roster of the cast. As time passes, more characters will be 'recruited', but the roster generally splits the cast into archetypes, ranging from <i>Mages</i> to <i>Tanks</i> and <i>Assasins</i>, each archetype having their own gimmicks. Whereas the mages may want to prioritize spacing and have generally low health but high damage to compensate, the tanks may want to be in the heat of battle, reveling in the mass pain and destruction they can incur with nothing but their menacing stance and proud stature. Most playstyles will find something they like at some point, with my intent being to implement and add new characters regularly for a good while! I'd really like this game to evolve as time goes by, with layers upon layers of replayability and hours of gameplay to ensue. I really want my game to be the beacon of light players want and am always happy to hear player feedback! First, though, I've got to get the game up and running, so wish me luck!</p>" +
                 "<div class=\"dragonImg\"><img src=\"/assets/abilArt.PNG\" alt=\"Blender Sickle Asset\"></div>" +
                 "<p>I'm very excited to tackle this new adventure with you all! See you in a bit!</p>";
+            break;
+        case "article6":
+            mainPane.innerHTML = "<a class=\"backbtn\" onclick=\"updateContent('home')\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M20 9v6h-8v4.84L4.16 12L12 4.16V9h8Z\"/></svg></a>" +
+                "<h1>Article 6: From the Camera's Lens</h1>" +
+                "<p>October 11, 2023</p>" +
+                "<h2>Hiya everyone!</h2>" +
+                "<p>Today's entry focuses primarily on the basics of the game! Starting now, the game has entered high gear! I'm putting more attention into it as the midterm season ends, especially considering two of my classes have their foundations built on C++, making this project honestly a great review!</p>" +
+                "<h2>Art</h2>" +
+                "<p>Have you ever wondered how game assets are made? Well I sure have! I came into this thinking it would be a streamlined set of tools that everyone uses, but instead I was in for a VERY rude awakening when I saw the likes of Krita, Gimp, Procreate, Piskel, and so many more. The options have overwhelmed me for a bit but eventually I tried several different programs and ended up settling with my pixel art program for iPads, Piskel. This is what I'm using for many of the smaller assets such as character abilities, UI elements, hud, etc. Here is an example of some assets I made using piskel! These are the ability icons for now of the alchemist character created in the last post:</p>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/alchSplash.png\" alt=\"Beta Sprites for the Alchemist's Abilities.\"></div>" +
+                "<h2>Rendered</h2>" +
+                "<p>Having played with the blender settings, I've perfected the pixel style I want to approach this game with! Now it's time to figure out how to create this effect in game and render hard lighting using toon shaders and essentially strangle the pixels to create that pixelated outcome. I'm sure the rendering shouldnt be too bad! That's to be seen though!</p>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/desktopSetup.jpg\" alt=\"Blender Render featuring Bento!\"></div>" +
+                "<p>Progress comes in steps... and with lots of cuddles from kitties!</p>";
             break;
     }
 }
