@@ -113,5 +113,16 @@ function updateContent(content) {
                 "<div class=\"dragonImg\"><img src=\"/assets/desktopSetup.jpg\" alt=\"Blender Render featuring Bento!\"></div>" +
                 "<p>Progress comes in steps... and with lots of cuddles from kitties!</p>";
             break;
+        case "article7":
+            mainPane.innerHTML = "<a class=\"backbtn\" onclick=\"updateContent('home')\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"M20 9v6h-8v4.84L4.16 12L12 4.16V9h8Z\"/></svg></a>" +
+                "<h1>Devlog 7: The Gates Open</h1>" +
+                "<p>November 17, 2023</p>" +
+                "<h2>Welcome back!</h2>" +
+                "<p>Today's entry is focused on the main C++ framework I'm using, as well as the way its working. After lots of work and research on what framework to use, I stumbled across an incredibly useful one that I meshed with really well!</p>" +
+                "<h2>RayLib</h2>" +
+                "<p>Raylib is an incredible tool I'm putting to use within my game! This language allows for immense customization as well as powers C++ to work easier as a game engine through methods like IsKeyPressed() or LoadModel(). To add to this, Raylib is serving as the mathematical base for alot of the functions I use, considering this game is taking place in a 3D environment and being crunched down into the pixelated 2d style via a shader. I have the Vector structs to thank for a lot of the movement capabilities, as well as the GetScreenToWorld methods. Nonetheless, I know the documentation on a library like this will often struggle for more niche use cases, but I am willing to delve deep into this and take the necessary time to figure out how to best adapt this into a game!</p>" +
+                "<div class=\"dragonImg\"><img src=\"/assets/betaCube.png\" alt=\"A cube drawn and able to be moved with the title of Player1.\"></div>" +
+                "<p>Slowly but surely, we make it through! Catch you all in the next one!</p>";
+            break;
     }
 }
