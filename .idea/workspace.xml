@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a6971a0-0c0e-48f0-801a-93b8925aacd1" name="Changes" comment="Try to bug fix site, as github pages refuses to open new site">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devlog/devlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/devlog/devlog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devlog/devlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/devlog/devlog.js" afterDir="false" />
-    </list>
+    <list default="true" id="1a6971a0-0c0e-48f0-801a-93b8925aacd1" name="Changes" comment="Previous bug fixes worked! Now Updating Entry 7 for devlog" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +54,7 @@
       <workItem from="1692913780270" duration="667000" />
       <workItem from="1697136025102" duration="33000" />
       <workItem from="1697136063066" duration="1836000" />
-      <workItem from="1700240657040" duration="3818000" />
+      <workItem from="1700240657040" duration="3886000" />
     </task>
     <task id="LOCAL-00001" summary="testing bugs">
       <created>1697137922374</created>
@@ -74,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700240872088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Previous bug fixes worked! Now Updating Entry 7 for devlog">
+      <created>1700244552863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700244552863</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing bugs" />
     <MESSAGE value="Try to bug fix site, as github pages refuses to open new site" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to bug fix site, as github pages refuses to open new site" />
+    <MESSAGE value="Previous bug fixes worked! Now Updating Entry 7 for devlog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Previous bug fixes worked! Now Updating Entry 7 for devlog" />
   </component>
 </project>
